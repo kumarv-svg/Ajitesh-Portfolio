@@ -32,15 +32,14 @@ const PROJECTS_DATA = [
     caseStudy: {
       problemStatement: 'The company was experiencing an elevated customer cancellation rate but lacked granular visibility into which subscription tiers, usage behaviors, or service issues were driving customer churn. Management required an end-to-end analytical pipeline to isolate high-risk customer segments and quantify recurring revenue vulnerability.',
       methodology: [
-        'Ingested raw telecommunications subscription logs and cleaned anomalous billing and tenure records using Excel and Python (Pandas).',
-        'Built a normalized relational schema in MySQL joining Customers, Subscriptions, ServiceUsage, SupportTickets, Transactions, and Feedback tables.',
-        'Authored analytical SQL queries executing cohort aggregations, tenure binning, and customer support escalation impact calculations.',
+        'Ingested raw telecommunications subscription logs and cleaned anomalous billing and tenure records using Excel.',
+        'Used a sample relational schema in MySQL joining Customers, Subscriptions, ServiceUsage, SupportTickets, Transactions, and Feedback tables.',
+        'Authored analytical SQL queries executing aggregations, tenure binning, and customer support escalation impact calculations.',
         'Engineered an interactive executive Power BI dashboard featuring dynamic slicers across Regions, Plan Types, Payment Methods, and Churn Years.'
       ],
       keyInsights: [
         'Basic and Standard tier subscribers exhibited the highest churn tendencies (approaching ~30%), while Corporate accounts demonstrated superior customer loyalty.',
         'Primary root causes for cancellations centered on aggressive Competitor offers and recurring Payment Gateway issues.',
-        'Customers lodging more than 2 unresolved support tickets experienced a 2.4x higher churn probability, pinpointing customer care response time as a crucial retention lever.',
         'Monthly recurring revenue at immediate risk was quantified at ₹ 4.62M, enabling targeted win-back and onboarding interventions.'
       ],
       sqlSnippet: `-- Churn Rate and Revenue at Risk by Customer Plan & Segment
@@ -96,7 +95,7 @@ ORDER BY Monthly_Revenue_At_Risk DESC;`
       keyInsights: [
         'Overall OTIF stood at 34.96% against a 90.23% Fill Rate, demonstrating that delivery timing—rather than warehouse stock availability—was the primary fulfillment bottleneck.',
         'Delayed shipments totaled 4,276 out of 10,000 orders, with initial hub pickup and dispatch bottlenecks accounting for over 28,000 delay hours.',
-        'Kolkata and New Delhi Central DCs led warehouse OTIF performance, whereas regional bottlenecks were observed in Tier-2 transit routes.',
+        'Kolkata and New Delhi Central DCs led warehouse OTIF performance.',
         'Identified high-velocity Grocery and Personal Care lines with elevated backorder volumes (1,194K units), advising optimized reorder thresholds.'
       ],
       sqlSnippet: `-- Supplier On-Time Performance & Quality Rating Analysis
