@@ -81,7 +81,7 @@ ORDER BY Monthly_Revenue_At_Risk DESC;`
       'Transit delay attribution',
       'Order fulfillment status'
     ],
-    thumbnail: 'assets/images/supply-chain-dashboard.png',
+    thumbnail: 'assets/images/supplychain-dashboard.png',
     dataModelImg: 'assets/images/supplychain-datamodel.png',
     githubUrl: 'https://github.com/kumarv-svg/Bharatmart-Supply-Chain-Overview',
     caseStudy: {
